@@ -154,6 +154,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114089564111551448, guid: 8e57b568f338a1e4fb3ece153544c68f,
         type: 2}
+      propertyPath: generateFleet
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114089564111551448, guid: 8e57b568f338a1e4fb3ece153544c68f,
+        type: 2}
       propertyPath: firstTime
       value: 0
       objectReference: {fileID: 0}
@@ -690,16 +695,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numOfAreas: 0
-  currentLevel: 1
+  areas: []
+  currentLevel:
+    maps: []
   fleetNum: 1
-  probNum: 1e00000028000000140000000a000000
-  probType:
-  - 5
-  - 5
-  - 0
-  - 0
-  - 0
-  - 0
   testTexts:
   - {fileID: 498444884}
   - {fileID: 490476862}
@@ -707,11 +706,11 @@ MonoBehaviour:
   - {fileID: 1391711560}
   - {fileID: 849757678}
   testButtons:
-  - {fileID: 1030104661}
-  - {fileID: 1646211184}
-  - {fileID: 1813450191}
-  - {fileID: 182565519}
-  - {fileID: 1205733523}
+  - {fileID: 1030104664}
+  - {fileID: 1646211187}
+  - {fileID: 1813450194}
+  - {fileID: 182565522}
+  - {fileID: 1205733526}
 --- !u!1 &976646307
 GameObject:
   m_ObjectHideFlags: 0

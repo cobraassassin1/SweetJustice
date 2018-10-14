@@ -14,13 +14,13 @@ public class FightManager : MonoBehaviour {
     public void WinFight()
     {
         LevelManager level = GetComponent<LevelManager>();
-        if (bartender.levelID == 15)
+        if (bartender.currentLevel == 15)
         {
             level.LoadLevel("3AScoreboard");
         }
         else
         {
-            bartender.levelID += 1;
+            bartender.NextLevel();
             level.LoadLevel("2BMap");
         }
         
