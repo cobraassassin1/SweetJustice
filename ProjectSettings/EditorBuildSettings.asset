@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/2DBar.unity
     guid: e0c39df69896ea5409d65bfc2e9275fe
   - enabled: 1
+    path: Assets/_Scenes/2EDungeon.unity
+    guid: d5b937fb54bf2d44da4a33376028c93c
+  - enabled: 1
     path: Assets/_Scenes/3AScoreboard.unity
     guid: df783bcee0468074d8b1d899f914a993
   m_configObjects: {}

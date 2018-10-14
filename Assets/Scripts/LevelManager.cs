@@ -37,7 +37,6 @@ public class LevelManager : MonoBehaviour
     /// <param name="name">Level to load</param>
     public void LoadLevel(string name)
     {
-        Debug.Log("New Level load: " + name);
         SceneManager.LoadScene(name);
     }
 
