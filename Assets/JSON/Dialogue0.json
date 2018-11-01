@@ -1,0 +1,87 @@
+{
+    "Items": [
+        {
+            "sentences": [ "Excuse me...", "Sorry kid, but this is a bar not a motel.", "You are truly the definition of a lightweight" ],
+            "ID": 0,
+            "responses": [
+                {
+                    "response": "Where am I?",
+                    "toDialogue": [ 1 ],
+                    "unlockID": [ -1 ]
+                },
+                {
+                    "response": "Who are you?",
+                    "toDialogue": [ 2 ],
+                    "unlockID": [ -1 ]
+                },
+                {
+                    "response": "What is the meaning of life?",
+                    "toDialogue": [ 3, 4, 5 ],
+                    "isRand": true,
+                    "unlockID": [ -1 ]
+                }
+            ]
+        },
+        {
+            "sentences": [ "You are at my Space Bar" ],
+            "ID": 1,
+            "responses": [
+                {
+                    "response": "Who are you?",
+                    "toDialogue": [ 2 ],
+                    "unlockID": [ -1 ]
+                },
+                {
+                    "response": "What is the meaning of life?",
+                    "toDialogue": [ 3, 4, 5 ],
+                    "isRand": true,
+                    "unlockID": [ -1 ]
+                }
+            ]
+        },
+        {
+            "sentences": [ "I am the owner of this establishment.", "People just call me the Bartender" ],
+            "ID": 2,
+            "responses": [
+                {
+                    "response": "Where am I?",
+                    "toDialogue": [ 1 ],
+                    "unlockID": [ -1 ]
+                },
+                {
+                    "response": "What is the meaning of life?",
+                    "toDialogue": [ 3, 4, 5 ],
+                    "isRand": true,
+                    "unlockID": [ -1 ]
+                }
+            ]
+        },
+        {
+            "sentences": [ "Maybe you should ask that when you are sober." ],
+            "ID": 3,
+            "responses": [
+                {
+                    "toDialogue": [ 6 ]
+                }
+            ]
+        },
+        {
+            "sentences": [ "If I knew that answer, I would be making much more money" ],
+            "ID": 4,
+            "responses": [
+                {
+                    "toDialogue":  [6]
+                }
+            ]
+        },
+        {
+            "sentences": [ "If I knew that answer, I would charge more for my services" ],
+            "ID": 5,
+            "responses": [
+                {
+                    "toDialogue": [ 6 ]
+                }
+            ]
+        }
+    ]
+}

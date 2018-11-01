@@ -18,6 +18,7 @@ public class TheBartender : MonoBehaviour {
     [Header("Conversation Variables")]
     public int convoPersonID = 0; //Default is Bartender
     public int locationID = 0; //Default is Bar
+    public int startDialogueID = 0; //See dialogue.json
     public bool firstTime = true; //Default is Start of Game
 
     [Header("Bar Variables")]
@@ -30,7 +31,6 @@ public class TheBartender : MonoBehaviour {
     public bool AutoBartender { get { return this.autoBartender; } set { this.autoBartender = value; } }
 
     private static TheBartender instance = null;
-    private static Tools TOOLS = new Tools();
 
     private void Awake()
     {
@@ -87,7 +87,7 @@ public class TheBartender : MonoBehaviour {
         GenerateNextMiniBoss(5, 6);
         getLevel(1).AddArea(new MapArea("Deep Space", MapType.Fight, 0001));
         //Generate Bar and Cider Woods as they are interchangable
-        float rand = TOOLS.GenerateRand();
+        float rand = Tools.GenerateRand();
         Debug.Log("rand Bar and Cider: " + rand);
         if (rand > 50)
         {
@@ -111,13 +111,13 @@ public class TheBartender : MonoBehaviour {
         //Generate the possiblity of the Cored Planet appearing without hearing of it
         if(nextMiniBoss == 5)
         {
-            if (TOOLS.GenerateRand() < 30)
+            if (Tools.GenerateRand() < 30)
             {
                 GenerateCorePlanet();
             }
         }else if(nextMiniBoss == 6)
         {
-            if(TOOLS.GenerateRand() < 40)
+            if(Tools.GenerateRand() < 40)
             {
                 GenerateCorePlanet();
             }
@@ -128,7 +128,7 @@ public class TheBartender : MonoBehaviour {
 
     private void GenerateNextMiniBoss(int start, int end)
     {
-        float rand = TOOLS.GenerateRand();
+        float rand = Tools.GenerateRand();
         int var1 = end - start + 1;
         float interval = 100 / var1;
         float min = 100;
@@ -147,7 +147,7 @@ public class TheBartender : MonoBehaviour {
     //Story specific generators
     private void GenerateCorePlanet()
     {
-        if(TOOLS.GenerateRand() > 50)
+        if(Tools.GenerateRand() > 50)
         {
             MapArea area = new MapArea("Cored Planet", MapType.Dungeon, 2001);
             area.SetIsGuarded(85);

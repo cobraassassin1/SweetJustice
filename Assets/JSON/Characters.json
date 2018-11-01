@@ -1,0 +1,12 @@
+{
+	"Items": [
+		{
+			"ID": 0,
+			"Name": "Bartender"
+		},
+		{
+			"ID": 1,
+			"Name": "GENAI"
+		}
+	]
+}

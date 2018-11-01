@@ -13,8 +13,6 @@ public class MapArea {
     internal int ID;
     internal bool isGuarded = false;
 
-    private static Tools TOOLS = new Tools();
-
     internal MapArea(string var1, MapType var2, int var3)
     {
         areaName = var1;
@@ -66,7 +64,7 @@ public class MapArea {
 
     internal void SetIsGuarded(int percent)
     {
-        if(TOOLS.GenerateRand() < percent)
+        if(Tools.GenerateRand() < percent)
         {
             isGuarded = true;
         }

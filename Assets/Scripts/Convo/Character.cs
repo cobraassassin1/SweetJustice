@@ -1,9 +1,8 @@
 ﻿using System.Xml;
 using System.Xml.Serialization;
 
-public class Character {
-    [XmlAttribute("id")]
-    public string ID;
-
+[System.Serializable]
+public struct Character {
+    public int ID;
     public string Name;
 }
